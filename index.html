@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='refresh' content='4;URL=portfolio.html'>
+    <title>Loading...</title>
+    <style>
+ *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: grid;
+  place-content: center;
+}
+.wrapper{
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left,.right{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  animation: pulse 1.4s linear infinite;
+}
+.right{
+  animation-delay: 0.7s
+}
+@keyframes pulse{
+  0%, 100%{
+    transform: scale(0);
+      opacity: 0.1;
+  }
+  50%{
+    transform: scale(1);
+    opacity: 1;
+      
+  }
+}
+ </style>
+</head>
+<body>
+    <div class="container">
+  <div class="wrapper">
+   <div class="left"></div>
+   <div class="right"></div>
+  </div>
+</div>
+</body>
+</html>
